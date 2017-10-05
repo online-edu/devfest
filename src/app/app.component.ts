@@ -6,25 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
-  items;
+  toggle: boolean = true;
 
-  constructor() {
-    this.items = [
-      {
-        title: 'Agenda',
-        icon: 'view_agenda'
-      },
-      {
-        title: 'Speakers',
-        icon: 'people'
-      },
-      {
-        title: 'Location',
-        icon: 'location_city'
-      }
-    ];    
-  }
-
-
+  constructor() { }
 }
