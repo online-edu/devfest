@@ -1,0 +1,19 @@
+<h2 class="mat-h2">Speakers</h2>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap class="grid">
+    <md-card *ngFor="let speaker of speakers">
+        <md-card-header>
+            <div md-card-avatar>
+                <md-icon class="icon">account_circle</md-icon>
+            </div>
+            <md-card-title>{{speaker.name}}</md-card-title>
+            <md-card-subtitle>{{speaker.designation}}</md-card-subtitle>
+        </md-card-header>
+        <md-card-content>
+
+        </md-card-content>
+        <md-card-actions>
+            <button md-button>LIKE</button>
+            <button md-button>SHARE</button>
+        </md-card-actions>
+    </md-card>
+</div>
