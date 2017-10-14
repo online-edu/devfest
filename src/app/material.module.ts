@@ -2,27 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  MdButtonModule,
-  MdCardModule,  
-  MdIconModule,
-  MdListModule,
-  MdRadioModule,
-  MdSidenavModule,
-  MdSlideToggleModule,
-  MdTabsModule,
-  MdToolbarModule
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatListModule,
+  MatRadioModule,
+  MatSidenavModule,
+  MatSlideToggleModule,
+  MatTableModule,
+  MatToolbarModule,
+  MatTabsModule
 } from '@angular/material';
 
 const CommonModules = [
-  MdButtonModule,
-  MdCardModule,  
-  MdIconModule,
-  MdListModule,
-  MdRadioModule,
-  MdSidenavModule,
-  MdSlideToggleModule,
-  MdTabsModule,
-  MdToolbarModule
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatListModule,
+  MatRadioModule,
+  MatSidenavModule,
+  MatSlideToggleModule,
+  MatTabsModule,
+  MatToolbarModule
 ];
 
 @NgModule({

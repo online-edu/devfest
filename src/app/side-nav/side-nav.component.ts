@@ -4,12 +4,12 @@ import { Router } from "@angular/router";
 @Component({
     selector: 'nav-items',
     template: `
-        <md-nav-list>
-            <md-list-item *ngFor="let item of items" (click)="goTo(item.route)">
-                <md-icon mdListIcon>{{item.icon}}</md-icon>
-                <h3 mdLine>{{item.title}}</h3>
-            </md-list-item>
-        </md-nav-list>`
+        <mat-nav-list>
+            <mat-list-item *ngFor="let item of items" (click)="goTo(item.route)">
+                <mat-icon matListIcon>{{item.icon}}</mat-icon>
+                <h3 matLine>{{item.title}}</h3>
+            </mat-list-item>
+        </mat-nav-list>`
 })
 
 export class SideNavComponent {

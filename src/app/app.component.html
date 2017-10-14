@@ -1,17 +1,17 @@
 <toolbar></toolbar>
-<md-sidenav-container fullscreen>
-  <md-sidenav #sidenav class="sidenav mat-elevation-z4" mode="side" opened="true">
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav class="sidenav mat-elevation-z4" mode="side" opened="true">
     <nav-items></nav-items>
-  </md-sidenav>
+  </mat-sidenav>
   <div class="container">
-    <md-radio-group [(ngModel)]="toggle">
-      <md-radio-button [value]="false">Hide</md-radio-button>
-      <md-radio-button [value]="true">Show</md-radio-button>
-    </md-radio-group>
+    <mat-radio-group [(ngModel)]="toggle">
+      <mat-radio-button [value]="false">Hide</mat-radio-button>
+      <mat-radio-button [value]="true">Show</mat-radio-button>
+    </mat-radio-group>
     <div [ngStyle]="{'float':'right'}">
-      <md-slide-toggle [(ngModel)]="toggle">Toggle View!</md-slide-toggle>
+      <mat-slide-toggle [(ngModel)]="toggle">Toggle View!</mat-slide-toggle>
     </div>
 
     <router-outlet *ngIf="toggle"></router-outlet>
   </div>
-</md-sidenav-container>
+</mat-sidenav-container>
