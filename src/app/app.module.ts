@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import 'hammerjs';
 
 import { MaterialModule } from "./material.module";
 import { AppRoutingModule } from "./app-routing.module";

@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'agenda',
     templateUrl: 'agenda.component.html',
-    styles: ['md-toolbar{ position: relative; z-index: 9; }']
 })
 
 export class AgendaComponent {
