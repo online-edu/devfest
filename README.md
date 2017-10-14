@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/online-edu/devfest.svg?branch=master)](https://travis-ci.org/online-edu/devfest)
+
 # Devfest
 
 Angular Material Components 
