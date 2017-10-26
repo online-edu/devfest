@@ -13,6 +13,7 @@ import { SideNavComponent } from "./side-nav/side-nav.component";
 import { AgendaComponent } from "./agenda/agenda.component";
 import { SpeakersComponent } from "./speakers/speakers.component";
 import { LocationComponent } from "./location/location.component";
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LocationComponent } from "./location/location.component";
     LocationComponent,
     SideNavComponent,
     SpeakersComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,
