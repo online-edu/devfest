@@ -1,0 +1,17 @@
+.container{
+    padding: 20px;
+    .register-form{
+        .row{
+            margin-bottom: 20px;            
+              h3{
+                  margin-bottom: 10px !important;
+              }              
+        }
+    }
+    mat-form-field{
+        min-width: 48%;
+    }
+    .social{
+        min-width: auto;
+    }
+}

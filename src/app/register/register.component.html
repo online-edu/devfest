@@ -1,3 +1,72 @@
-<p>
-  register works!
-</p>
+<div [style.padding.px]="10">
+  <h2 class="mat-h2">Register</h2>
+  <mat-card>
+    <mat-card-content class="container">
+      <form class="register-form">
+        <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
+          <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="start center" class="row-example">
+            <mat-form-field>
+              <input matInput placeholder="First name">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Last name">
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
+          <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="start center" class="row-example">
+            <mat-form-field>
+              <input matInput placeholder="Email">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Company">
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center stretch" class="row">
+          <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="start" class="row-example">
+            <mat-form-field>
+              <input matInput placeholder="Years of experience">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-select placeholder="Track">
+                <mat-option value="web">Web</mat-option>
+                <mat-option value="mob">Mobile</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
+          <div fxLayout="row" fxLayoutGap="40px">
+            <mat-form-field class="social">
+              <mat-select placeholder="Social Profile">
+                <mat-option value="Facebook">Facebook</mat-option>
+                <mat-option value="Twitter">Twitter</mat-option>
+                <mat-option value="LinkedIn">LinkedIn</mat-option>
+                <mat-option value="Instagram">Instagram</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <button mat-button>Add </button>            
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" class="row">
+          <div fxLayout="row" fxLayoutGap="50px">
+            <div fxLayout="column">
+              <h3 class="subheading-2">Designations</h3>
+              <mat-radio-group fxLayout="column" fxLayoutGap="15px">
+                <mat-radio-button *ngFor="let designation of designations" [value]="designation">
+                  {{designation}}
+                </mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="start">
+              <h3 class="subheading-2">Attended any of these</h3>
+              <mat-checkbox *ngFor="let event of events">{{event}}</mat-checkbox>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+</div>
