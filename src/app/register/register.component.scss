@@ -7,9 +7,13 @@
                   margin-bottom: 10px !important;
               }              
         }
+        pre{
+            width: 300px;
+            background-color: #FAFAFA;
+        }
     }
     mat-form-field{
-        min-width: 48%;
+        min-width: 325px;
     }
     .social{
         min-width: auto;
