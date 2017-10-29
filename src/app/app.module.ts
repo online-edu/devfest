@@ -14,6 +14,7 @@ import { AgendaComponent } from "./agenda/agenda.component";
 import { SpeakersComponent } from "./speakers/speakers.component";
 import { LocationComponent } from "./location/location.component";
 import { RegisterComponent } from './register/register.component';
+import { StepperComponent } from './register/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RegisterComponent } from './register/register.component';
     SideNavComponent,
     SpeakersComponent,
     ToolbarComponent,
-    RegisterComponent
+    RegisterComponent,
+    StepperComponent
   ],
   imports: [
     AppRoutingModule,

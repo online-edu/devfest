@@ -26,6 +26,7 @@ export class RegisterComponent implements OnInit {
       website: [''],
       social: this.fb.array([]),
       designation: [''],
+      guest: [''],
       events: this.fb.array([])
     })
   }

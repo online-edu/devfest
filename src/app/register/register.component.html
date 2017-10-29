@@ -3,6 +3,7 @@
   <mat-card>
     <mat-card-content class="container">
       <form class="register-form" [formGroup]="register" (ngSubmit)="onRegister()">
+        <!-- fxLayout="row" fxLayoutGap="20px" -->
         <div fxLayout="row" fxLayoutGap="20px">
           <div fxLayout="column">
             <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
@@ -78,12 +79,16 @@
               </div>
             </div>
             <div fxLayout="column" fxLayoutAlign="start" class="row">
-              <mat-form-field>
-                <mat-select placeholder="Track" formControlName="track">
-                  <mat-option value="Web">Web</mat-option>
-                  <mat-option value="Mobile">Mobile</mat-option>
-                </mat-select>
-              </mat-form-field>
+              <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+                <mat-form-field>
+                  <mat-select placeholder="Track" formControlName="track">
+                    <mat-option value="Web">Web</mat-option>
+                    <mat-option value="Mobile">Mobile</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <strong>Bringing Guest</strong>
+                <stepper-control formControlName="guest"></stepper-control>
+              </div>
             </div>
             <div class="row">
               <button type="submit" mat-raised-button color="primary">Add </button>
