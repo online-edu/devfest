@@ -2,21 +2,15 @@ import { Component, OnInit, forwardRef, Input, OnChanges } from '@angular/core';
 import {
   ControlValueAccessor,
   FormControl,
-  NG_VALUE_ACCESSOR,
-  NG_VALIDATORS
+  NG_VALUE_ACCESSOR
 } from '@angular/forms';
 
 @Component({
   selector: 'stepper-control',
-  templateUrl: './stepper.component.html',  
+  templateUrl: './stepper.component.html',
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => StepperComponent),
-      multi: true
-    },
-    {
-      provide: NG_VALIDATORS,
       useExisting: forwardRef(() => StepperComponent),
       multi: true
     }
