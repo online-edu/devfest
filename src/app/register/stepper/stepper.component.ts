@@ -18,11 +18,12 @@ import {
 })
 export class StepperComponent implements ControlValueAccessor {
   @Input('value') _value = 0;
-
-  constructor() { }
-
+  
   propagateChange: any = () => { };
   validateFn: any = () => { };
+
+
+  constructor() { }
 
   get value() {
     return this._value;

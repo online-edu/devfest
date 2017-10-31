@@ -4,7 +4,7 @@
     <mat-card-content class="container">
       <form class="register-form" [formGroup]="register" (ngSubmit)="onRegister()">
         <!-- fxLayout="row" fxLayoutGap="20px" -->
-        <div fxLayout="row" fxLayoutGap="20px">
+        <div>
           <div fxLayout="column">
             <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
               <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="start center" class="row-example">
@@ -51,7 +51,7 @@
             </div>
             <div fxLayout="column" fxLayoutAlign="center stretch" class="row">
               <div fxLayout="row" fxLayoutGap="40px">
-                <button mat-button (click)="addField()">Add social profile</button>
+                <button type="button" mat-button (click)="addField()">Add social profile</button>
               </div>
               <div formArrayName="social" fxLayout="row" fxLayoutGap="10px" fxLayoutWrap>
                 <div *ngFor="let url of register.controls.social.controls; let i=index" [formGroupName]="i">
@@ -80,7 +80,7 @@
             </div>
             <div fxLayout="column" fxLayoutAlign="start" class="row">
               <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
-                <mat-form-field>
+                <mat-form-field style="max-width: 250px;">
                   <mat-select placeholder="Track" formControlName="track">
                     <mat-option value="Web">Web</mat-option>
                     <mat-option value="Mobile">Mobile</mat-option>
@@ -91,17 +91,18 @@
               </div>
             </div>
             <div class="row">
-              <button type="submit" mat-raised-button color="primary">Add </button>
+              <button type="submit" mat-raised-button color="primary">Register</button>
+              <button type="button" mat-button>Cancel</button>
             </div>
           </div>
-          <div fxLayoutAlign="stretch">
+          <!-- <div fxLayoutAlign="stretch">
             <pre>Status : {{register.status | json }}
 Data :               
 {{register.value | json }}
 Errors :
 {{ register.get('email').errors | json }}
             </pre>
-          </div>
+          </div> -->
         </div>
       </form>
     </mat-card-content>
