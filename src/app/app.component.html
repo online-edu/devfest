@@ -4,14 +4,6 @@
     <nav-items></nav-items>
   </mat-sidenav>
   <div class="container">
-    <mat-radio-group [(ngModel)]="toggle">
-      <mat-radio-button [value]="false">Hide</mat-radio-button>
-      <mat-radio-button [value]="true">Show</mat-radio-button>
-    </mat-radio-group>
-    <div [ngStyle]="{'float':'right'}">
-      <mat-slide-toggle [(ngModel)]="toggle">Toggle View!</mat-slide-toggle>
-    </div>
-
-    <router-outlet *ngIf="toggle"></router-outlet>
+    <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>

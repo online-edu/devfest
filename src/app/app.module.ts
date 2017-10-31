@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import 'hammerjs';
 
@@ -13,6 +13,8 @@ import { SideNavComponent } from "./side-nav/side-nav.component";
 import { AgendaComponent } from "./agenda/agenda.component";
 import { SpeakersComponent } from "./speakers/speakers.component";
 import { LocationComponent } from "./location/location.component";
+import { RegisterComponent } from './register/register.component';
+import { StepperComponent } from './register/stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +23,18 @@ import { LocationComponent } from "./location/location.component";
     LocationComponent,
     SideNavComponent,
     SpeakersComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    RegisterComponent,
+    StepperComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FlexLayoutModule,
     FormsModule,
-    NoopAnimationsModule,
-    MaterialModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

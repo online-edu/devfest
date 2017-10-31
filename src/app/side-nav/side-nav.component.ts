@@ -31,6 +31,11 @@ export class SideNavComponent {
                 title: 'Location',
                 icon: 'location_city',
                 route: 'location'
+            },
+            {
+                title: 'Register',
+                icon: 'person_add',
+                route: 'register'
             }
         ];
     }
