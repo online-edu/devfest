@@ -1,5 +1,5 @@
 <div [style.padding.px]="10">
-  <h2 class="mat-h2">Register</h2>
+  <h2 class="mat-h2">💺 Register</h2>
   <mat-card>
     <mat-card-content class="container">
       <form class="register-form" [formGroup]="register" (ngSubmit)="onRegister()">
@@ -25,11 +25,7 @@
                   <mat-icon matSuffix>email</mat-icon>
                   <mat-error *ngIf="register.get('email').hasError('email') && register.get('email').touched">
                     Please enter a valid email address
-                  </mat-error>
-                  <mat-error *ngIf="register.get('email').hasError('required')">
-                    Email is
-                    <strong>required</strong>
-                  </mat-error>
+                  </mat-error>                  
                 </mat-form-field>
                 <mat-form-field>
                   <input matInput placeholder="Company" formControlName="company">
@@ -91,7 +87,7 @@
               </div>
             </div>
             <div class="row">
-              <button type="submit" mat-raised-button color="primary">Register</button>
+              <button [disabled]="!register.valid" mat-raised-button color="primary">Register</button>
               <button type="button" mat-button>Cancel</button>
             </div>
           </div>
