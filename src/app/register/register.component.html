@@ -54,7 +54,7 @@
                 <button type="button" mat-button (click)="addField()">Add social profile</button>
               </div>
               <div formArrayName="social" fxLayout="row" fxLayoutGap="10px" fxLayoutWrap>
-                <div *ngFor="let url of register.controls.social.controls; let i=index" [formGroupName]="i">
+                <div *ngFor="let url of socialFileds.controls; let i=index" [formGroupName]="i">
                   <mat-form-field>
                     <input matInput placeholder="URL" formControlName="url">
                     <mat-icon matSuffix>link</mat-icon>
@@ -72,10 +72,10 @@
                     </mat-radio-button>
                   </mat-radio-group>
                 </div>
-                <div fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="start">
+                <!-- <div fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="start">
                   <h3 class="subheading-2">Attended any of these</h3>
                   <mat-checkbox [value]="event" name="events" formConrtolName="events" *ngFor="let event of events">{{event}}</mat-checkbox>
-                </div>
+                </div> -->
               </div>
             </div>
             <div fxLayout="column" fxLayoutAlign="start" class="row">

@@ -35,14 +35,17 @@ export class RegisterComponent implements OnInit {
     console.log("test");
   }
 
+  get socialFileds() {
+    return <FormArray>this.register.get('social');
+  }
+
   getLinkControl() {
     return this.fb.group({
       'url': ['']
     })
   }
 
-  addField(social) {
-    console.log(social);
+  addField() {
     const control = this.register.controls['social'] as FormArray;
     control.push(this.getLinkControl());
   }
@@ -55,15 +58,15 @@ export class RegisterComponent implements OnInit {
       'Entrepreneur',
       'Other Profession'
     ];
-    this.events = [
-      'DevFest Ahmedabad 2016',
-      'DevFest Ahmedabad 2015',
-      'DevFest Ahmedabad 2014',
-      'DevFest Ahmedabad 2013',
-      'Women Techmakers: Ahmedabad',
-      'Google I/O Extended Ahmedabad',
-      'None'
-    ]
+    // this.events = [
+    //   'DevFest Ahmedabad 2016',
+    //   'DevFest Ahmedabad 2015',
+    //   'DevFest Ahmedabad 2014',
+    //   'DevFest Ahmedabad 2013',
+    //   'Women Techmakers: Ahmedabad',
+    //   'Google I/O Extended Ahmedabad',
+    //   'None'
+    // ]
   }
 
 }
