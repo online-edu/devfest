@@ -31,8 +31,8 @@ export class RegisterComponent implements OnInit {
     })
   }
 
-  onRegister() {
-    console.log("test");
+  onRegister() {  
+    console.log("Form Value", this.register.value);
   }
 
   get socialFileds() {
